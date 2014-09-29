@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<!--meta http-equiv="refresh" content="3" > <!-- auto refresh -->
+  <head>
+    <title>CATCH THE BALL STUPEE</title>
+    <link type="text/css" rel="stylesheet" href="userReceiveStyle.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="userReceiveJS.js" async></script>
+  </head>
+  <body>
+    <section id = "preGame">
+      <div id="bigCoinDiv">
+      </div>
+      <div id="bg">
+      <img src="img/huddlebg.png" class="stretch"/>
+      </div>
+      <div id="header">
+        <h2 id="headText">RECEIVE</h2>
+      </div>
+      <div id="refdiv">
+        <div id="gamePlandiv">
+        <h3 id="gamePlan">GAME PLAN</h3>
+        </div>
+        <img id = "refFlip" src="img/chalkboard.png"/> 
+      </div>
+      <div class="bubble"></div>
+      <div id= "dialogueDiv"></div>
+        <div id = "dialogue">
+          <img class="bigCoin"/>
+          <br>
+          <p> Moment of truth! </p>
+          <br>
+          <p class = "textheight"> Your team will be </p>
+          <p class = "textheight"> RECEIVING </p>
+          <br>
+          <p class = "textheight"> Will you choose to run</p>
+          <p class = "textheight"> Left or Right? </p>
+          <br>
+          <p> Make your selection below! </p>
+        </div>
+      <div id="headsDiv">
+        <a id="headslink" onclick="receiveLeft()" href="javascript:void(0)"> <img id="heads" src="img/leftarrow.png"> </a>
+      </div>
+      <div id="tailsDiv">
+        <a id="tailslink" onclick="receiveRight()" href="javascript:void(0)"> <img id="tails" src="img/rightarrow.png"> </a>
+      </div>
+      <div id="footer" style="background-image: url(img/footer.jpg);">
+        <p id="msg">CS20 Foundations</p>
+        <p id="year">2014</p>
+      </div>
+    </section>
+    <section id ="gameLeft">
+      <div id="gameBG">
+      <img src="img/aerialfield.jpg" class="stretch"/>
+      </div>
+      <img id="playerRun" src="img/playerRun.png" class="stretch"/>
+    </section>
+  </body>
+
+</html>

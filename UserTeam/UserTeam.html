@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<!--meta http-equiv="refresh" content="3" > <!-- auto refresh -->
+  <head>
+    <title>PICK A TEAM</title>
+    <link type="text/css" rel="stylesheet" href="UserTeamStyle.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="UserTeamjs.js" async></script>
+  </head>
+  <body>
+    <div id="bg">
+    <img src="img/bgfield.jpg" class="stretch"/>
+    </div>
+    <div id="header">
+      <h2 id="headText">TEAM SELECTION</h2>
+    </div>
+    <div id="coachdiv">
+      <img id = "coach" src="img/coach.png"> 
+    </div>
+    <div class = "speech"></div>
+    <div id = "speechText">
+      <br><br>
+      <p> Eyyy </p>
+      <p> It's a brand new season! </p>
+      <p> What team do you want to play for? </p>
+      <p> Use the box below to select your team! </p>
+      <p> Character Limit: 1-20
+    </div>
+    <div id="subdiv">
+      <!-- submit form -->
+  <form action="javascript:void(0);" method="post" id="submitbox" name="teamform" onsubmit="getuserTeam();">
+    <a id="teambox">Team Name: </a>
+    <input type="text" name="response" placeholder="Team Name Here" id="response">
+    <input type="submit" value="submit" id="submit">
+  </form>
+    <!-- error message -->
+    <div id="error">
+      <p id="errormsg"></p>
+    </div>
+    </div>
+    <!-- footer -->
+    <div id="footer" style="background-image: url(img/footer.jpg);">
+      <p id="msg">CS20 Foundations</p>
+      <p id="year">2014</p>
+    </div>
+  </body>
+    <!-- CHARGERS POPUP -->
+  <div id="popUp">
+    <div class="goH1">
+      <h1 class = "gouser"></h1>
+    </div>
+    <p class="inpopUp"></p>
+    <div>
+      <img id="helmet" src="img/chelmet.gif"/>
+    </div>
+    <div class="divform">
+    <form action="CoinFlip/CoinFlip.html">
+    <input id="proceed" type="submit" value="Proceed">
+    </form>
+    </div>
+  </div>
+  <div id="popupBG"></div>
+  <!-- SEAHAWKS POPUP -->
+  <div id="popUp2">
+    <div class="goH1">
+      <h1 class = "gouser"></h1>
+    </div>
+    <p class="inpopUp"></p>
+    <div>
+      <img id="helmet2" src="img/shelmet.gif"/>
+    </div>
+    <div class="divform">
+    <form action="CoinFlip/CoinFlip.html" onsubmit="getuserTeam();";>
+    <input class="proceed" type="submit" value="Proceed">
+    </form>
+    </div>
+  </div>
+  <div id="popupBG2"></div>
+
+</html>

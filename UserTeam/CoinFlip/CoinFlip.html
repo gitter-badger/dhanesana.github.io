@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<!--meta http-equiv="refresh" content="3" > <!-- auto refresh -->
+  <head>
+    <title>FLIP A COIN</title>
+    <link type="text/css" rel="stylesheet" href="CoinFlipStyle.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="CoinFlipJS.js" async></script>
+  </head>
+  <body>
+    <div id="bigCoinDiv">
+    </div>
+    <div id="bg">
+    <img src="img/bgtoss.jpg" class="stretch"/>
+    </div>
+    <div id="header">
+      <h2 id="headText">COIN TOSS</h2>
+    </div>
+    <div id="refdiv">
+      <img id = "refFlip" src="img/refFlip.png"/> 
+    </div>
+    <div class="coinflip">
+      <div class="front">
+        <img class="coin" src="img/coin.png"/>
+      </div>
+    </div>
+    <div id= "dialogueDiv"></div>
+      <div id = "dialogue">
+        <img class="bigCoin"/>
+        <br><br>
+        <p> The ref will now flip a coin to determine if you will kick or receive ...</p>
+        <br>
+        <p> Do you pick Heads or Tails? </p>
+        <br>
+        <p> Make your choice below! </p>
+      </div>
+    <div id="headsDiv">
+      <a id="headslink" onclick="tossHeads()" href="javascript:void(0)"> <img id="heads" src="img/coin.png"> </a>
+    </div>
+    <div id="tailsDiv">
+      <a id="tailslink" onclick="tossTails()" href="javascript:void(0)"> <img id="tails" src="img/cointails.png"> </a>
+    </div>
+    <div id="footer" style="background-image: url(img/footer.jpg);">
+      <p id="msg">CS20 Foundations</p>
+      <p id="year">2014</p>
+    </div>
+    <section id="popupz">
+        <!-- Win Toss Popup -->
+    <div id="popUp">
+      <div class="goH1">
+        <h1 class = "gouser"></h1>
+      </div>
+      <p class="inpopUp"></p>
+      <div class>
+        <img class="coinPic"/>
+        <h2 class="rdy"></h2>
+      </div>
+      <div class="divform">
+      <form action="userReceive/userReceive.html">
+      <input id="receive" type="submit" value="Receive!">
+      </form>
+      </div>
+    </div>
+    <div id="popupBG"></div>
+    <!-- Lose Toss Popup -->
+    <div id="popUp2">
+      <div class="goH1">
+        <h1 class = "gouser"></h1>
+      </div>
+      <p class="inpopUp"></p>
+      <div>
+        <img class="coinPic"/>
+        <h2 class = "rdy"></h2>
+      </div>
+      <div class="divform">
+      <form action="userKick/userKick.html">
+      <input id="kickoff" type="submit" value="Kick-Off!">
+      </form>
+      </div>
+    </div>
+    <div id="popupBG2"></div>
+  </section>
+  </body>
+
+</html>
