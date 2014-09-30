@@ -483,7 +483,7 @@ br {
   position: fixed;
   font-family: Futura;
   font-size: .5rem;
-  left: 41%;
+  left: 28%;
   top: 25%;
   font-color: black;
 }
@@ -494,6 +494,15 @@ br {
   height: 15%;
   bottom:20%;
   left:5%;
+  display:none;
+}
+
+#oppball {
+  position:fixed;
+  width: 8%;
+  height: 15%;
+  bottom:20%;
+  left:90%;
   display:none;
 }
 

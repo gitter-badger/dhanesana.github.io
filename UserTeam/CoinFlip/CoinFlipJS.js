@@ -38,7 +38,6 @@ $(document).ready(function() {
     $(this).css({"opacity": "1"});
     $(".bigCoin").effect('explode');
   });
-    alert (document.cookie);
 });
 
 

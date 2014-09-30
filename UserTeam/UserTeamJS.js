@@ -96,10 +96,16 @@ function popupPos2(){
 }
 
 function getuserTeam() {
-  userTeam = document.teamform.response.value.toLowerCase();
+  userTeam = document.teamform.response.value.toLowerCase(),
+    // Store userTeam as Local Var
+    localStorage.removeItem("opps");
+    localStorage.removeItem("userTeam");
+    localStorage.setItem("userTeam", userTeam);
+
 
     if (userTeam == "seattle seahawks" || userTeam == "seahawks") {
       opps = "CHARGERS";
+      localStorage.setItem("opps", opps);
       $(".inpopUp").text("U GON PLAY THE " + opps.toUpperCase() + "!");
       popupPos();
       popLoad();
@@ -110,6 +116,7 @@ function getuserTeam() {
     $("#errormsg").text("TOO LONG! LIMIT: 20 CHARS'");
   } else {
       opps = "SEAHAWKS";
+      localStorage.setItem("opps", opps);
       $(".inpopUp").text("U GON PLAY THE " + opps.toUpperCase() + "!");
       popupPos2();
       popLoad2();
@@ -117,9 +124,16 @@ function getuserTeam() {
 
     $(".gouser").text("Go " + userTeam.toUpperCase() + "!");
 
-    document.cookie=userTeam;
-    alert (document.cookie);
+    function setCookie(name, value, expires, path, domain, secure){
+    document.cookie= name + "=" + escape(userTeam) +
+    ((expires) ? "; expires=" + expires.toGMTString() : "") +
+    ("; path=/CoinFlip/userReceive/userReceiveJS.js") +       //you having wrong quote here
+    ((domain) ? "; domain=" + domain : "") +
+    ((secure) ? "; secure" : "");
+}
+
 };
+
 
 
 

@@ -205,6 +205,7 @@ function userGame() {
     $("#run").animate({'font-size': "6rem"}, 700, function() {
       $('#gameBG3').fadeIn(400, function() {
         $('#run').fadeOut('fast');
+        $('#oppball').fadeIn('fast');
         $('#runball').fadeIn(400, function() {
           popupPos();
           popLoad();
@@ -233,7 +234,7 @@ function userGame() {
               if (runset.left >= 700 || runset2.left >= 700) {
                 $('#almost').fadeIn(400);
               }
-              if (runset.left >= 1024 || runset2.left >= 1024) {
+              if (runset.left >= 921.6 || runset2.left >= 921.6) {
                 finishLeft();
               }
             }
@@ -254,6 +255,7 @@ function userGame2() {
     $("#run").animate({'font-size': "6rem"}, 700, function() {
       $('#gameBG3').fadeIn(400, function() {
         $('#run').fadeOut('fast');
+        $('#oppball').fadeIn('fast');
         $('#runball').fadeIn(400, function() {
           popupPos();
           popLoad();
@@ -282,7 +284,7 @@ function userGame2() {
               if (runset.left >= 700 || runset2.left >= 700) {
                 $('#almost').fadeIn(400);
               }
-              if (runset.left >= 1024 || runset2.left >= 1024) {
+              if (runset.left >= 921.6 || runset2.left >= 921.6) {
                 finishRight();
               }
             }
@@ -296,6 +298,7 @@ function userGame2() {
 function finishLeft() {
   //fade out usergame
   $(document).unbind();
+  $('#oppball').fadeOut(1);
   $('#lol').fadeOut(1);
   $('#keep').fadeOut(1);
   $('#halfway').fadeOut(1);
@@ -308,7 +311,7 @@ function finishLeft() {
       $('#dive').animate({top:'60%', left: '25%'}, 7000, function(){
         $('#gameBG4').fadeOut('fast');
         $('#dive').fadeOut('fast', function() {
-          window.location.assign("Win/win.html")
+          window.location.assign("../userReceive/Lose/lose.html")
         })
       });
     });
@@ -318,6 +321,7 @@ function finishLeft() {
 function finishRight() {
   //fade out usergame
   $(document).unbind();
+  $('#oppball').fadeOut(1);
   $('#lol').fadeOut(1);
   $('#keep').fadeOut(1);
   $('#halfway').fadeOut(1);
@@ -333,7 +337,7 @@ function finishRight() {
           $('#lolball').fadeIn('fast');
           $('#lolball').animate({top:'40%', left: '1%'}, 3000);
           $('#sack').animate({top:'60%', left: '10%'}, 5000, function() {
-            window.location.assign("Lose/lose.html")
+            window.location.assign("../userReceive/Win/win.html")
           })
         });
       });
