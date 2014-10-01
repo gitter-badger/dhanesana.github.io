@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<!--meta http-equiv="refresh" content="3" > <!-- auto refresh -->
+  <head>
+    <title>CATCH THE BALL STUPEE</title>
+    <link type="text/css" rel="stylesheet" href="userReceiveStyle.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="userReceiveJS.js" async></script>
+  </head>
+  <body>
+    <section id = "preGame">
+      <div id="bigCoinDiv">
+      </div>
+      <div id="bg">
+      <img src="img/huddlebg.png" class="stretch"/>
+      </div>
+      <div id="header">
+        <h2 id="headText">RECEIVE</h2>
+      </div>
+      <div id="refdiv">
+        <div id="gamePlandiv">
+        <h3 id="gamePlan">GAME PLAN</h3>
+        </div>
+        <img id = "refFlip" src="img/chalkboard.png"/> 
+      </div>
+      <div class="bubble"></div>
+      <div id= "dialogueDiv"></div>
+        <div id = "dialogue">
+          <img class="bigCoin"/>
+          <br>
+          <p> Moment of truth! </p>
+          <br>
+          <p class = "textheight"> Your team will be </p>
+          <p class = "textheight"> RECEIVING </p>
+          <br>
+          <p class = "textheight"> Will you choose to run</p>
+          <p class = "textheight"> Left or Right? </p>
+          <br>
+          <p> Make your selection below! </p>
+        </div>
+      <div id="headsDiv">
+        <a id="headslink" onclick="receiveLeft()" href="javascript:void(0)"> <img id="heads" src="img/leftarrow.png"> </a>
+      </div>
+      <div id="tailsDiv">
+        <a id="tailslink" onclick="receiveRight()" href="javascript:void(0)"> <img id="tails" src="img/rightarrow.png"> </a>
+      </div>
+      <div id="footer" style="background-image: url(img/footer.jpg);">
+        <p id="msg">CS20 Foundations</p>
+        <p id="year">2014</p>
+      </div>
+    </section>
+    <section id ="gameLeft">
+      <div id="gameBG">
+      <img src="img/altbg.jpg" class="stretch"/>
+      </div>
+      <div id="gameBG2">
+      <img src="img/bg2.png" class="stretch"/>
+      </div>
+       <div id="gameBG3">
+      <img src="img/sidefield.jpg" class="stretch"/>
+      </div>
+      <div id="gameBG4">
+      <img src="img/endzone.jpg" class="stretch"/>
+      </div>
+      <img id="playerRun" src="img/playerRun.png" class="stretch"/>
+      <img id="playerKick" src="img/playerkick.png" class="stretch"/>
+      <img id="playerReceive" src="img/playerReceive.png" class="stretch"/>
+      <img id="football" src="img/football.png" class="stretch"/>
+      <img id="football2" src="img/football.png" class="stretch"/>
+      <img id="playerCatch" src="img/catching.png" class="stretch"/>
+      <img id="frontBall" src="img/footballfront.png" class="stretch"/>
+      <!-- interactive keypress running -->
+      <h1 id="run">RUN!</h1>
+      <img id="runball" src="img/runwithball.png" class="stretch"/>
+      <img id="runball2" src="img/runwithball2.png" class="stretch"/>
+      <h1 id="lol"> LOL GREAT FORM :></h1>
+      <h1 id="keep"> KEEP GOING U GOT THIS! </h1>
+      <h1 id="halfway"> HALFWAY THERE! UR DOING GREAT! </h1>
+      <h1 id="almost"> SO CLOSE! </h1>
+      <!-- endzone cutscene animation -->
+      <img id="dive" src="img/playerdive.png" class="stretch"/>
+      <img id="sack" src="img/sack.png" class="stretch"/>
+      <img id="lolball" src="img/footballface.png" class="stretch"/>
+    </section>
+    <section id="popupz">
+        <!-- Game Instructions Popup -->
+      <div id="popUp">
+        <div class="goH1">
+          <h1>HOW TO PLAY</h1>
+        </div>
+        <p class="inpopUp">LOOK AT UR KEYBOARD</p>
+        <div class>
+          <img id="buttonPic" src="img/arrowbutton.png" />
+          <h2 class="rdy"></h2>
+        </div>
+        <div class="divform">
+        <form action="javascript:void(0);">
+        <input id="ok" type="submit" value="OK I GOT IT!">
+        </form>
+        </div>
+      </div>
+      <div id="popupBG"></div>
+      <!-- EndGamePopup -->
+      <div id="popUp2">
+        <div class="goH1">
+          <h2 id = "winorlose"></h2>
+        </div>
+        <p class="inpopUp"></p>
+        <div>
+          <img id="winPic"/>
+          <h2 class = "rdy"></h2>
+        </div>
+        <div class="divform">
+        <form action="../../../index.html">
+        <input id="kickoff" type="submit" value="Play Again">
+        </form>
+        </div>
+      </div>
+      <div id="popupBG2">
+      <img id="endBG" class="stretch"/>
+      </div>
+    </section>
+  </body>
+
+</html>
