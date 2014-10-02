@@ -21,3 +21,4 @@ Consolidate linked files to their own respective directories,
 Seperate directory for storing images.
 
 Concept: random notes
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/dhanesana/dhanesana.github.io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
